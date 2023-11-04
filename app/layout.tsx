@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import { Roboto } from 'next/font/google'
+import { Red_Hat_Display } from 'next/font/google'
 import './ui/globals.css'
 import { Header } from './ui/header/Header'
 
-const roboto = Roboto({
-  weight: '400',
+const redHatDisplay = Red_Hat_Display({
+  weight: '500',
   subsets: ['latin'],
 })
 
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={redHatDisplay.className}>
         <Header/>
         {children}
         </body>

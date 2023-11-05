@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={redHatDisplay.className}>
         <Header/>
         {children}
-        </body>
+      </body>
     </html>
   )
 }

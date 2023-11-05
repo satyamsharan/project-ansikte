@@ -18,3 +18,11 @@ body {
   color: #FFB20F;
   background-color: #08090A;
 }
+
+.header{
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  transition: all 1s ease;
+  z-index: 10;
+}

@@ -1,9 +1,28 @@
+"use client"
+import { usePathname } from "next/navigation";
 import { NavItem } from "./NavItem";
+import { useState } from "react";
+import useWindowSize from "../../lib/useWindowSize";
 
 export function Header(){
+    const pathname = usePathname();
+    const size = useWindowSize();
+    
+    let isHomePage = false;
+    if(pathname == '/'){
+        isHomePage = true;
+    }else{
+        isHomePage = false;
+    }
+
+    let width = size.width>1024?600:320;
+    let height = size.width>1024?36:24;
+
+    console.log(size);
+
     return(
-        <div className="absolute inset-x-0 bottom-0 mb-[60px] lg:mb-[120px] z-10 flex items-center justify-center">
-            <div className="grid grid-cols-4 text-center">
+        <div className={'header p-1 b-[40] lg:b-[100]'} style={{transform: isHomePage?'translateY('+(size.height-(height*3))+'px)':'translateX('+((size.width-width)/2)+'px)'}}>
+            <div className="" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                 <NavItem linkLabel="Home" link="/" />
                 <NavItem linkLabel="Portfolio" link="/portfolio" /> 
                 <NavItem linkLabel="Playground" link="/playground" /> 

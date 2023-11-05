@@ -30,8 +30,10 @@ body {
 .info{
   position: fixed;
   z-index: 10;
-  left: 50%;
-  transform: translate(-50%, 0);
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .fadeIn{

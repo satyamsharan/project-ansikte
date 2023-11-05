@@ -21,12 +21,14 @@ export function Header(){
     console.log(size);
 
     return(
-        <div className={'header p-1 b-[40] lg:b-[100]'} style={{transform: isHomePage?'translateY('+(size.height-(height*3))+'px)':'translateX('+((size.width-width)/2)+'px)'}}>
-            <div className="flex items-center justify-center">
-                <NavItem linkLabel="Home" link="/" />
-                <NavItem linkLabel="Portfolio" link="/portfolio" /> 
-                <NavItem linkLabel="Playground" link="/playground" /> 
-                <NavItem linkLabel="Contact" link="/contact" />
+        <div className={(!isHomePage?`min-h-[52px] lg:min-h-[64px] headerBackActive`:``)+` headerBack border border-transparent transition-colors`}>
+            <div className={'header p-1 b-[40] lg:b-[100]'} style={{transform: isHomePage?'translateY('+(size.height-(height*3))+'px)':'translateX('+((size.width-width)/2)+'px)'}}>
+                <div className="flex items-center justify-center">
+                    <NavItem linkLabel="Home" link="/" />
+                    <NavItem linkLabel="Portfolio" link="/portfolio" /> 
+                    <NavItem linkLabel="Playground" link="/playground" /> 
+                    <NavItem linkLabel="Contact" link="/contact" />
+                </div>
             </div>
         </div>
     );

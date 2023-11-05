@@ -14,7 +14,7 @@ export default function Page() {
   return (
     <div className="h-screen w-screen" >
       <LorenzAttractor />
-      <div className={(!showInfoButton?`hidden`:``)+` info opacity-60 top-[40px] lg:top-[100px] max-w-sm lg:max-w-lg select-none`}>
+      <div className={(!showInfoButton?`hidden`:`fadeIn`)+` info opacity-60 top-[40px] lg:top-[100px] max-w-sm lg:max-w-lg select-none`}>
         <div className='p-6 text-center mt-[10px]'>
           <div className={`cursor-pointer text-white text-xs lg:text-base`} onClick={()=>setShowInfoState(showInfoState==1?2:1)}>Lorenz Attractor</div>
           <div className={(showInfoState==0?`hidden `:``)+(showInfoState==1?`fadeIn `:`fadeOut `)+` p-3 text-center rounded-lg border border-transparent transition-colors border-neutral-50 bg-neutral-50 text-right`}>

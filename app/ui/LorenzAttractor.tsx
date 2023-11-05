@@ -13,7 +13,7 @@ const Art = () => {
             ref.current.rotation.y+=delta/50;
         }
     });
-	return (<primitive ref={ref} object={model.scene} scale={.1} rotation-x={Math.PI/2} rotation-y={Math.PI/2}/>);
+	return (<primitive ref={ref} object={model.scene} scale={.15} position-z={-3} rotation-x={Math.PI/2} rotation-y={Math.PI/2}/>);
 };
 
 export default function LorenzAttractor(){

@@ -26,3 +26,98 @@ body {
   transition: all 1s ease;
   z-index: 10;
 }
+
+.info{
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.fadeIn{
+  animation-name: appear;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+.fadeOut{
+  animation-name: disappear;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear{
+  0%{
+    display: block !important;
+    opacity: 0;
+  }
+  10%{
+    opacity: .1;
+  }
+  20%{
+    opacity: .2;
+  }
+  30%{
+    opacity: .3;
+  }
+  40%{
+    opacity: .4;
+  }
+  50%{
+    opacity: .5;
+  }
+  60%{
+    opacity: .6;
+  }
+  70%{
+    opacity: .7;
+  }
+  80%{
+    opacity: .8;
+  }
+  90%{
+    opacity: .9;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes disappear{
+  0%{
+    opacity: 1;
+  }
+  10%{
+    opacity: .9;
+  }
+  20%{
+    opacity: .8;
+  }
+  30%{
+    opacity: .7;
+  }
+  40%{
+    opacity: .6;
+  }
+  50%{
+    opacity: .5;
+  }
+  60%{
+    opacity: .4;
+  }
+  70%{
+    opacity: .3;
+  }
+  80%{
+    opacity: .2;
+  }
+  90%{
+    opacity: .1;
+  }
+  100%{
+    opacity: 0;
+    display: none;
+  }
+}
+
+

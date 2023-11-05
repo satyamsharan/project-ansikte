@@ -1,7 +1,7 @@
 export default function Page() {
     return(
         <>
-            <div>Portfolio</div>
+            <div className="pt-14">Portfolio</div>
         </>
     );
 }

@@ -1,7 +1,7 @@
 export default function Page() {
     return(
         <>
-            <div>Playground</div>
+            <div className="pt-14">Playground</div>
         </>
     );
 }

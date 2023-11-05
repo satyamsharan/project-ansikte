@@ -1,7 +1,7 @@
 export default function Page() {
     return(
         <>
-            <div>Contact</div>
+            <div className="pt-14">Contact</div>
         </>
     );
 }

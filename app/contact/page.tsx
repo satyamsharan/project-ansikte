@@ -17,7 +17,7 @@ export default function Page() {
             <div className="flex-row lg:flex justify-center items-center">
                 <div className="m-auto lg:m-0 max-w-[360px] p-[10px]">
                     <ContactCard className="mt-10" accentColor={1} icon="github" reversed={false} title="Fork on GitHub" link="https://github.com/satyamsharan/" text="Chech out some of my exciting projects and contributions on GtHub." />
-                    <ContactCard className="mt-10" accentColor={2} icon="linkedin" reversed={true} title="Connect on LinkedIn" link="https://www.linkedin.com/in/satyamsharan/" text="For connecting and gettinng updates ping me on LinkedIn."/>
+                    <ContactCard className="mt-10" accentColor={2} icon="linkedin" reversed={true} title="Connect on LinkedIn" link="https://www.linkedin.com/in/satyamsharan/" text="For connecting and gettinng my professional updates ping me on LinkedIn."/>
                     <ContactCard className="mt-10" accentColor={3} icon="email" reversed={false} title="Write an email" link="mailto:satyam.sharan@gmail.com" text="You can email me at 'satyam.sharan@gmail.com' to start a conversation." />
                     <ContactCard className="mt-10" accentColor={4} icon="phone" reversed={true} title="Call or WhatsApp" link="https://wa.me/46722060706?text=Hi+Satyam%21+I+am+..." text="You can also reach me at +46(0)722060706 via phone or WhatsApp." />
                 </div>
@@ -32,6 +32,9 @@ export default function Page() {
                         <Link href={`https://maps.app.goo.gl/heftvzGRi3snH9r38`} target="_blank">
                             Espresso House, Västerlånggatan 57, 111 29 Stockholm, Sweden
                         </Link>
+                    </div>
+                    <div className="p-4 m-auto text-xs text-center">
+                        Tack &nbsp;| &nbsp; ध्न्यावाद &nbsp;| &nbsp; Thank You
                     </div>
                 </div>
             </div>

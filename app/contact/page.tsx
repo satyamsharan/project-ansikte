@@ -11,7 +11,7 @@ export default function Page() {
             <div className="text-center mt-[-150px] mb-[20px]" >Contact Me</div>
         
             <div className="p-4 m-auto text-xs text-justify max-w-[400px]">
-                Thank you for your interest in getting in touch with me. Whether you have questions, feedback, business inquiries, or just want to say hello, I'd love to hear from you. You can reach me through the following.
+                Thank you for your interest in getting in touch with me. Whether you have questions, feedback, business inquiries, or just want to say hello, I&apos;d love to hear from you. You can reach me through the following.
             </div>
 
             <div className="flex-row lg:flex justify-center items-center">
@@ -23,7 +23,7 @@ export default function Page() {
                 </div>
                 <div className="m-auto lg:m-0 max-w-[360px] p-[10px] pb-[100px]">
                     <div className="p-4 m-auto text-xs text-justify">
-                        You can often find me at the Espresso House in Old Town, Stockholm. It's a place I frequently visit, whether it's for a cup of coffee, a quick meeting, or some quiet time to work on my projects. If you ever find yourself in the area, feel free to drop by, and maybe we can catch up over a cup of coffee.
+                        You can often find me at the Espresso House in Old Town, Stockholm. It&apos;s a cafe I frequently visit, whether it&apos;s for a cup of coffee, a quick meeting, or some quiet time to work on my projects. If you ever find yourself in the area, feel free to drop by, and maybe we can catch up over a cup of coffee.
                     </div>
                     <Link href={`https://maps.app.goo.gl/heftvzGRi3snH9r38`} target="_blank">
                         <Image className="m-auto rounded-full" src={'/map.png'} alt="" width={360} height={360}/>

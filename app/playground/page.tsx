@@ -8,7 +8,7 @@ export default function Page() {
             <div className="text-center mt-[-150px] mb-[20px]" >Playground</div>
         
             <div className="p-4 m-auto text-xs text-justify max-w-[400px]">
-            Here, you can explore a diverse range of content that hasn't found a specific home on any other page. Whether it's a puzzle, an intriguing article, or a captivating video, this is the space where the yet-to-be-discovered resides.
+            Here, you can explore a diverse range of content that hasn&apos;t found a specific home on any other page. Whether it&apos;s a puzzle, an intriguing article, or a captivating video, this is the space where the yet-to-be-discovered resides.
             </div>
 
             <div className="flex-row lg:flex justify-center items-center">

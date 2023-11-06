@@ -5,6 +5,103 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 214, 219, 220;
+  --a1: 235	68	90;
+  --a2: 49	124	246;
+  --a3: 119	213	115;
+  --a4: 241	154	56;
+  --a5: 87	90	206;
+  --a6: 119	198	246;
+  --a7: 247	204	70;
+  --a8: 235	76	61;
+
+}
+
+.text-a1{
+  color: rgb(var(--a1));
+}
+.back-a1{
+  background-color: rgb(var(--a1));
+}
+.border-a1{
+  border-width: 1px;
+  border-color: rgb(var(--a1));
+}
+
+.text-a2{
+  color: rgb(var(--a2));
+}
+.back-a2{
+  background-color: rgb(var(--a2));
+}
+.border-a2{
+  border-width: 1px;
+  border-color: rgb(var(--a2));
+}
+
+.text-a3{
+  color: rgb(var(--a3));
+}
+.back-a3{
+  background-color: rgb(var(--a3));
+}
+.border-a3{
+  border-width: 1px;
+  border-color: rgb(var(--a3));
+}
+
+.text-a4{
+  color: rgb(var(--a4));
+}
+.back-a4{
+  background-color: rgb(var(--a4));
+}
+.border-a4{
+  border-width: 1px;
+  border-color: rgb(var(--a4));
+}
+
+.text-a5{
+  color: rgb(var(--a5));
+}
+.back-a5{
+  background-color: rgb(var(--a5));
+}
+.border-a5{
+  border-width: 1px;
+  border-color: rgb(var(--a5));
+}
+
+.text-a6{
+  color: rgb(var(--a6));
+}
+.back-a6{
+  background-color: rgb(var(--a6));
+}
+.border-a6{
+  border-width: 1px;
+  border-color: rgb(var(--a6));
+}
+
+.text-a7{
+  color: rgb(var(--a7));
+}
+.back-a7{
+  background-color: rgb(var(--a7));
+}
+.border-a7{
+  border-width: 1px;
+  border-color: rgb(var(--a7));
+}
+
+.text-a8{
+  color: rgb(var(--a8));
+}
+.back-a8{
+  background-color: rgb(var(--a8));
+}
+.border-a8{
+  border-width: 1px;
+  border-color: rgb(var(--a8));
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,8 +112,21 @@
 }
 
 body {
-  color: #FFB20F;
+  color: #FFFFFF;
   background-color: #08090A;
+}
+img {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header{
@@ -131,4 +241,17 @@ body {
 }
 .headerBackActive{
   background-color: black;
+}
+
+.fade-in {
+  animation: fade-in 3s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 80;
+  }
 }

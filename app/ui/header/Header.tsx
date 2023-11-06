@@ -15,7 +15,7 @@ export function Header(){
         isHomePage = false;
     }
 
-    let width = size.width>1024?610:332;
+    let width = size.width>1024?610:360;
     let height = size.width>1024?36:24;
 
     console.log(size);
@@ -27,7 +27,7 @@ export function Header(){
                     <NavItem linkLabel="Home" link="/" />
                     <NavItem linkLabel="Portfolio" link="/portfolio" /> 
                     <NavItem linkLabel="Playground" link="/playground" /> 
-                    <NavItem linkLabel="Contact" link="/contact" />
+                    <NavItem linkLabel="Contact Me" link="/contact" />
                 </div>
             </div>
         </div>

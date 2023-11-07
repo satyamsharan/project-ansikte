@@ -26,7 +26,7 @@ export default function Page() {
                         You can often find me at the Espresso House in Old Town, Stockholm. It&apos;s a cafe I frequently visit, whether it&apos;s for a cup of coffee, a quick meeting, or some quiet time to work on my projects. If you ever find yourself in the area, feel free to drop by, and maybe we can catch up over a cup of coffee.
                     </div>
                     <Link href={`https://maps.app.goo.gl/heftvzGRi3snH9r38`} target="_blank">
-                        <Image className="m-auto rounded-full" src={'/map.png'} alt="" width={360} height={360}/>
+                        <Image className="m-auto rounded-full" src={'/map.png'} alt="" width={340} height={340}/>
                     </Link>
                     <div className="p-4 m-auto text-xs text-center">
                         <Link href={`https://maps.app.goo.gl/heftvzGRi3snH9r38`} target="_blank">

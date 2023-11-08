@@ -8,7 +8,7 @@ export default function Page() {
             <div className="text-center z-10 mt-[-150px] mb-[20px] relative" >Portfolio</div>
         
             <div className="p-4 m-auto text-xs text-justify z-10 max-w-[400px] relative">
-                This portfolio represents my professional evolution, featuring a comprehensive overview of the organizations I've been a part of, my project contributions, notable achievements, as well as my interests and hobbies.
+                This portfolio represents my professional evolution, featuring a comprehensive overview of the organizations I&apos;ve been a part of, my project contributions, notable achievements, as well as my interests and hobbies.
             </div>
         </div>
     );

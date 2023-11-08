@@ -1,25 +1,30 @@
 "use client"
-import {motion, useAnimation } from "framer-motion"
+import {AnimatePresence, motion, useAnimation } from "framer-motion"
 import { useEffect, useState } from "react";
 import useWindowSize from "../lib/useWindowSize";
-import Link from "next/link";
+import Modal from "./Modal";
 
 interface PlaygroundItemProps{
     accentColor?:number,
     link?:string,
-    title?:string
+    linkTitle?:string,
+    title:string,
+    text:string
 }
 
 export default function PlaygroundItem({
     accentColor = 1,
     link,
-    title
+    linkTitle,
+    title,
+    text,
 }:PlaygroundItemProps){
     
 
     const [x, setX] = useState(0);
     const [y, setY] = useState(0);
     const [started, setStarted] = useState(false);
+    const [showModal, setShowModel] = useState(false);
 
     let paused = false;
 
@@ -42,7 +47,8 @@ export default function PlaygroundItem({
     const nextPosition:{x:number, y:number} = {x:startPoint.x, y:startPoint.y};
 
     function calculateNextPosition(){
-
+        console.log(size.width)
+        console.log(ballSize.width)
         lastPosition.x=nextPosition.x;
         lastPosition.y=nextPosition.y;
 
@@ -52,11 +58,6 @@ export default function PlaygroundItem({
         setX(nextPosition.x-lastPosition.x)
         setY(nextPosition.y-lastPosition.y);
         //console.log(accentColor +': '+ nextPosition.x+', '+ nextPosition.y)
-
-        itemAnimationControls.start({
-            x:x,
-            y:y
-        })
     }
 
 
@@ -65,13 +66,24 @@ export default function PlaygroundItem({
         //useEffect(() => {
             setStarted(true);
             setTimeout(() => {
-                //console.log(accentColor +' - starting')
+                console.log(accentColor +' - starting'+ x + ', ' + y)
                 calculateNextPosition();
+                console.log(accentColor +' - '+ x + ', ' + y)
+                calculateNextPosition();
+                console.log(accentColor +' - '+ x + ', ' + y)
+                startAnimation();
             }, (accentColor*1000));
 
         //}, [started]);
     }
 
+
+    function startAnimation(){
+        itemAnimationControls.start({
+            x:x,
+            y:y
+        })
+    }
 
     function stopAnimation(){
         itemAnimationControls.stop();
@@ -82,6 +94,7 @@ export default function PlaygroundItem({
             // console.log("Pau: "+paused);
             if(paused==false){
                 calculateNextPosition();
+                startAnimation();
             }
         },10)
     }
@@ -106,18 +119,28 @@ export default function PlaygroundItem({
     function onClick(){
         paused = true;
         // console.log("Clicked: "+paused);
+        setShowModel(true);
     }
 
     return (
-        <motion.div style={{width:`${ballSize.width}px`, height:`${ballSize.height}px`, left:`${startPoint.x}px`, top:`${startPoint.y}px`}} className={`playgroundItem back-a${accentColor} absolute rounded-full cursor-pointer text-white flex items-center justify-center`}
-            animate={itemAnimationControls}
-            onAnimationComplete={()=>{animationCompleted()}}
-           onHoverStart={()=>{hoverStart()}}
-           onHoverEnd={()=>{hoverEnd()}}
-           onClick={()=>{onClick()}}
-           transition={{ ease: "linear", duration: 8 }}
-        >
-            {link && <Link href={`${link}`} target="_blank">{title && <div className="itemTitle text-center text-sm">{title}</div>}</Link>} 
-        </motion.div>
+        <>
+            <motion.div style={{width:`${ballSize.width}px`, height:`${ballSize.height}px`, left:`${startPoint.x}px`, top:`${startPoint.y}px`}} className={`playgroundItem back-a${accentColor} absolute rounded-full cursor-pointer text-white flex items-center justify-center`}
+                animate={itemAnimationControls}
+                onAnimationComplete={()=>{animationCompleted()}}
+            onHoverStart={()=>{hoverStart()}}
+            onHoverEnd={()=>{hoverEnd()}}
+            onClick={()=>{onClick()}}
+            transition={{ ease: "linear", duration: 5 }}
+            >
+                {title && <div className="itemTitle text-center text-sm">{title}</div>}
+            </motion.div>
+
+            <AnimatePresence
+                initial={false}
+                
+            >
+                {showModal && <Modal handleClose={()=>setShowModel(false)}  title={title?title:''} link={link} linkTitle={linkTitle} text={text}/>}
+            </AnimatePresence>
+        </>
     );
 }

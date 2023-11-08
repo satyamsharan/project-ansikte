@@ -134,7 +134,7 @@ img {
   position: fixed;
   left: 0px;
   transition: all 1s ease;
-  z-index: 10;
+  z-index: 20;
 }
 
 .info{
@@ -234,7 +234,7 @@ img {
 
 .headerBack{
   position: fixed;
-  z-index: 10;
+  z-index: 30;
   left: 0px;
   right: 0px;
   transition: background-color 1s ease-in-out;
@@ -254,4 +254,22 @@ img {
   to {
     opacity: 80;
   }
+}
+
+.playgroundItem{
+  box-shadow: 0px 0px 5px 3px rgba(226,226,226,0.75);
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(226,226,226,0.75);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(226,226,226,0.75);
+  opacity: 0;
+
+    animation: fade-in 1s;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+}
+.playgroundItem:hover{
+  z-index: 35;
+  opacity: 1;
+  box-shadow: 0px 0px 10px 6px rgba(226,226,226,0.75);
+  -webkit-box-shadow: 0px 0px 10px 6px rgba(226,226,226,0.75);
+  -moz-box-shadow: 0px 0px 10px 6px rgba(226,226,226,0.75);
 }

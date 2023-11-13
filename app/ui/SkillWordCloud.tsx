@@ -1,7 +1,7 @@
 "use client"
-import HighchartsReact from "highcharts-react-official";
 import Highcharts, { Options } from 'highcharts';
-import wordCloud from "highcharts/modules/wordcloud.js";
+import HighchartsReact from "highcharts-react-official";
+import WordCloud from 'highcharts/modules/wordcloud';
 import { Red_Hat_Display } from 'next/font/google'
 
 const redHatDisplay = Red_Hat_Display({
@@ -10,8 +10,11 @@ const redHatDisplay = Red_Hat_Display({
 })
 const fontStyle = redHatDisplay.style;
 
-export default function WordCloud(){
-    wordCloud(Highcharts);
+export default function SkillWordCloud(){
+    if (typeof Highcharts === 'object') {
+        WordCloud(Highcharts);
+    }
+    
     const data:{name:string, weight:number}[] = [
         {weight:10, name:'Software Development'},
         {weight:7, name:'Data Analytics'},
@@ -109,9 +112,13 @@ export default function WordCloud(){
                 fontFamily: fontStyle.fontFamily
             }
         },
+        accessibility:{
+            enabled:false
+        },
         colors: ['#EB445A', '#317CF6', '#77D573', '#F19A38', '#575ACE', '#77C6F6', '#F7CC46', '#EB4C3D'],
         series: [{
             type: 'wordcloud',
+            spiral: 'archimedean',
             data:data
         }],
         title: {

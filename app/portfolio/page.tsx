@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import WordCloud from "../ui/WordCloud";
+import SkillWordCloud from "../ui/SkillWordCloud";
 import TimeLine from "../ui/TimeLine";
 
 export default function Page() {
@@ -32,7 +32,7 @@ export default function Page() {
                     <TimeLine />
                   </div>
                   <div className="">
-                    <WordCloud />
+                    <SkillWordCloud />
                   </div>
                 </div>
             </div>

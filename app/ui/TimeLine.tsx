@@ -227,10 +227,12 @@ export default function TimeLine(){
       }
 
     return(
-        <div className="timeLine">
+        <div>
             <div className="text-center mb-2">My Professional Timelinne</div>
             <div className="text-xs text-center pl-8 pr-8">Explore a comprehensive account of my professional voyage, featuring diverse experiences garnered from various organizations intertwined with my educational pursuits.</div>
-            {getDataNode()}
+            <div className="timeLine">
+              {getDataNode()}
+            </div>
         </div>
     );
 }

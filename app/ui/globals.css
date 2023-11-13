@@ -294,3 +294,9 @@ img {
   -webkit-box-shadow: 0px 0px 10px 6px rgba(226,226,226,0.75);
   -moz-box-shadow: 0px 0px 10px 6px rgba(226,226,226,0.75);
 }
+
+.timeLine{
+  background-image: url('/arrow.png');
+  background-repeat: repeat-y;
+  background-position: top;
+}

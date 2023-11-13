@@ -209,8 +209,8 @@ export default function TimeLine(){
         const result: React.ReactElement[] = [];
         data.map((node, index) => {
             result.push(
-                <div className="ml-auto mb-5 mt-5">
-                    <div id={`timeline-node-${index}`} className={`cursor-pointer ${node.type=='block'?'mr-auto justify-center':''} flex ${node.alignRight?'flex-row-reverse mr-auto':'felx-row ml-auto'} border-a${node.color} max-w-[270px] min-w-[200px] items-center rounded-xl text-bold`}>
+                <div key ={index} className="ml-auto mb-5 mt-5">
+                    <div id={`timeline-node-${index}`} className={`cursor-pointer ${node.type=='block'?'mr-auto justify-center':''} flex ${node.alignRight?'flex-row-reverse mr-auto':'felx-row ml-auto'} border-a${node.color} max-w-[280px] min-w-[200px] items-center rounded-xl text-bold`}>
                         {getIcon(node)}
                         {getText(node)}
                         <Tooltip id={`timeline-tooltip-${index}`} className="max-w-[300px]" anchorSelect={`#timeline-node-${index}`} openOnClick={true} variant="light" clickable={true}>
@@ -226,9 +226,6 @@ export default function TimeLine(){
         return result.reverse();
       }
 
-    function nodeClicked(index:number){
-        console.log(data[index]);
-    }
     return(
         <div className="timeLine">
             <div className="text-center mb-2">My Professional Timelinne</div>

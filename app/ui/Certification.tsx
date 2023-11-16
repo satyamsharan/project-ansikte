@@ -92,17 +92,10 @@ export default function Certification(){
     }
 
     function getText(certificate: Certificate): React.ReactElement{
-        let titleElement = <div className={`text-xs text-bold text-a${certificate.color}`}>{certificate.name}</div>;
-        if(certificate.link){
-            titleElement = (
-                <Link href={certificate.link?certificate.link:''} target="_blank">
-                    {titleElement}
-                </Link>);
-        }
         return (
             <div className={`pannelText mt-2 text-center`}>
                 <div>
-                    {titleElement}
+                    <div className={`text-xs text-bold text-a${certificate.color}`}>{certificate.name}</div>
                     <div className="text-xs text-white">{certificate.issuer}</div>
                     <div className="text-xs text-white">{certificate.date}</div>
                 </div>
@@ -112,10 +105,12 @@ export default function Certification(){
 
     function getCertificatePanel(certificate:Certificate, index:number){
         return(
-            <div id={`certificate-node-${index}`} className={`p-2 m-1 items-center text-bold rounded-lg border-a${certificate.color} max-w-[85px]`}>
-                {getIcon(certificate)}
-                {getText(certificate)}
-            </div>
+            <Link href={certificate.link?certificate.link:''} target="_blank">
+                <div id={`certificate-node-${index}`} className={`p-2 m-1 items-center text-bold rounded-lg border-a${certificate.color} max-w-[85px]`}>
+                    {getIcon(certificate)}
+                    {getText(certificate)}
+                </div>
+            </Link>
         );
 
     }
@@ -124,7 +119,11 @@ export default function Certification(){
     function getAllCertificates(){
         const result: React.ReactElement[] = [];
         certtificationList.map((certificate, index) => {
-            result.push(getCertificatePanel(certificate, index));
+            result.push(
+                <div key={`certificate-${index}`}>
+                    {getCertificatePanel(certificate, index)}
+                </div>
+            );
         })
         return (
             <div className="flex flex-wrap justify-center">

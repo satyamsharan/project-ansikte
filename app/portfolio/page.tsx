@@ -5,6 +5,7 @@ import SkillWordCloud from "../ui/SkillWordCloud";
 import TimeLine from "../ui/TimeLine";
 import Certification from "../ui/Certification";
 import Education from "../ui/Education";
+import Language from "../ui/Lanuage";
 
 export default function Page() {
   const data = [{
@@ -37,6 +38,7 @@ export default function Page() {
                     <SkillWordCloud />
                     <Certification />
                     <Education />
+                    <Language />
                   </div>
                 </div>
 

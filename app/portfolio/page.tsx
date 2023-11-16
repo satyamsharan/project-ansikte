@@ -6,6 +6,8 @@ import TimeLine from "../ui/TimeLine";
 import Certification from "../ui/Certification";
 import Education from "../ui/Education";
 import Language from "../ui/Lanuage";
+import TimeChart from "../ui/TimeChart";
+import Achievement from "../ui/Achievement";
 
 export default function Page() {
   const data = [{
@@ -31,7 +33,7 @@ export default function Page() {
             </div>
             <div className="p-4 max-w-5xl text-justify m-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2">
-                  <div className="pb-10">
+                  <div className="">
                     <TimeLine />
                   </div>
                   <div className="space-y-4">
@@ -40,6 +42,13 @@ export default function Page() {
                     <Education />
                     <Language />
                   </div>
+                  <div className="space-y-4">
+                    <TimeChart />
+                  </div>
+                  <div className="space-y-4">
+                    <Achievement />
+                  </div>
+
                 </div>
 
                 <hr/>

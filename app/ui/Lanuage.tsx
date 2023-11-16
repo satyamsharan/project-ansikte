@@ -1,6 +1,3 @@
-import Link from "next/link";
-import { FaQuestion, FaUserGraduate, FaGraduationCap} from "react-icons/fa";
-import { Tooltip } from "react-tooltip";
 
 interface Language{
     name:string;

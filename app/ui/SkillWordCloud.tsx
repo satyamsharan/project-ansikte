@@ -1,4 +1,3 @@
-"use client"
 import Highcharts, { Options } from 'highcharts';
 import HighchartsReact from "highcharts-react-official";
 import WordCloud from 'highcharts/modules/wordcloud';
@@ -17,6 +16,7 @@ export default function SkillWordCloud(){
     
     const data:{name:string, weight:number}[] = [
         {weight:10, name:'Software Development'},
+        {weight:10, name:'Algorithms'},
         {weight:7, name:'Data Analytics'},
         {weight:7, name:'Software Architecture'},
         {weight:7, name:'Cloud Architecture'},
@@ -105,7 +105,7 @@ export default function SkillWordCloud(){
         {weight:2, name:'Neo4j'},
     ];
 
-    const myTimeOptions: Options = {
+    const skillWordCloudOptions: Options = {
         chart: {
             backgroundColor:'none',
             style:{
@@ -150,10 +150,12 @@ export default function SkillWordCloud(){
 
 
     return(
+        <div className='min-h-[400px]'>
             <HighchartsReact 
                 highcharts={Highcharts}
-                options={myTimeOptions}
+                options={skillWordCloudOptions}
             />
+        </div>
     );
 
 }

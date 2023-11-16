@@ -12,12 +12,12 @@ interface Certificate{
     icon?:string;
 }
 
-export default function Certificaations(){
+export default function Certification(){
     let iconPadding = 12;
     let iconSize = 32;
     const certtificationList:Certificate[] = [
         {
-            name:'SnowPro Core Certification',
+            name:'SnowPro Core',
             issuer:'Snowflake',
             credential:'S0017592',
             date:'Apr 2023',
@@ -26,14 +26,14 @@ export default function Certificaations(){
             icon:'FaSnowflake',
             color:'1'
         },{
-            name:'Technology Architect Certification',
+            name:'Technology Architect',
             issuer:'Accenture',
             date:'Dec 2017',
             description:'',
             icon:'FaServer',
             color:'2'
         },{
-            name:'Agile Professional Certification',
+            name:'Agile Professional',
             issuer:'Accenture',
             credential:'636494349',
             date:'Jan 2016',
@@ -41,7 +41,7 @@ export default function Certificaations(){
             icon:'FaJira',
             color:'3'
         },{
-            name:'R Programmer Certification',
+            name:'R Programmer',
             issuer:'Coursera',
             credential:'K32CGYYJLA',
             date:'Oct 2015',
@@ -50,7 +50,7 @@ export default function Certificaations(){
             icon:'FaRProject',
             color:'4'
         },{
-            name:'Artificial Intelligence Certification',
+            name:'Artificial Intelligence',
             issuer:'Udacity',
             date:'Dec 2011',
             link:'/AICertification.pdf',
@@ -85,14 +85,14 @@ export default function Certificaations(){
                 IconElement = FaQuestion
         }
         return (
-            <div className={`text-white back-black text-center centered rounded-full m-1`} style={{'padding':iconPadding}}>
-                {<IconElement size={iconSize}/>}
-            </div>
+                <div className={`back-a${certificate.color} text-black text-center centered rounded-full m-auto max-w-[${2*iconPadding+iconSize}px]`} style={{'padding':iconPadding}}>
+                    {<IconElement size={iconSize}/>}
+                </div>
         );
     }
 
     function getText(certificate: Certificate): React.ReactElement{
-        let titleElement = <div className={`text-sm text-bold text-white`}>{certificate.name}</div>;
+        let titleElement = <div className={`text-xs text-bold text-a${certificate.color}`}>{certificate.name}</div>;
         if(certificate.link){
             titleElement = (
                 <Link href={certificate.link?certificate.link:''} target="_blank">
@@ -100,10 +100,10 @@ export default function Certificaations(){
                 </Link>);
         }
         return (
-            <div className={`pannelText m-2 text-left`}>
+            <div className={`pannelText mt-2 text-center`}>
                 <div>
                     {titleElement}
-                    <div className="text-xs text-white">Issuer: {certificate.issuer + (certificate.credential?(', Credentials: ' + certificate.credential):'')}</div>
+                    <div className="text-xs text-white">{certificate.issuer}</div>
                     <div className="text-xs text-white">{certificate.date}</div>
                 </div>
             </div>
@@ -112,17 +112,9 @@ export default function Certificaations(){
 
     function getCertificatePanel(certificate:Certificate, index:number){
         return(
-            <div id={`certificate-node-${index}`} className={`flex felx-row ml-auto back-a${certificate.color} items-center rounded-xl text-bold`}>
+            <div id={`certificate-node-${index}`} className={`p-2 m-1 items-center text-bold rounded-lg border-a${certificate.color} max-w-[85px]`}>
                 {getIcon(certificate)}
                 {getText(certificate)}
-
-                {/*
-                <Tooltip id={`timeline-tooltip-${index}`} className="max-w-[300px]" anchorSelect={`#timeline-node-${index}`} openOnClick={true} variant="light" clickable={true}>
-                    <div className="font-bold mb-2">{node.name}</div>
-                    <div className="text-xs mb-2">{node.description}</div>
-                    {getLink(node)}
-                </Tooltip>
-                {node.type=='block'?getIcon(node):''} */}
             </div>
         );
 
@@ -132,13 +124,13 @@ export default function Certificaations(){
     function getAllCertificates(){
         const result: React.ReactElement[] = [];
         certtificationList.map((certificate, index) => {
-            result.push(
-                <div key ={index} className="lg:ml-8 lg:mr-8 mb-2">
-                    {getCertificatePanel(certificate, index)}
-                </div>
-            );
+            result.push(getCertificatePanel(certificate, index));
         })
-        return result;
+        return (
+            <div className="flex flex-wrap justify-center">
+                {result}
+            </div>
+        );
 
     }
 
@@ -146,7 +138,7 @@ export default function Certificaations(){
         <div className="p-1">
             <div className="text-center mb-2">My Certifications</div>
             <div className="text-xs text-center pl-2 pr-2 lg:pl-8 lg:pr-8">Delve into a compilation showcasing my professional certifications, providing a detailed overview of the diverse skills and qualifications I have acquired throughout my career.</div>
-            <div className="p-2 lg:pl-10 lg:pr-10">
+            <div className="pt-2 pb-2">
               {getAllCertificates()}
             </div>
         </div>

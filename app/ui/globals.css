@@ -104,6 +104,29 @@
   border-color: rgb(var(--a8));
 }
 
+.text-white{
+  color: #FFFFFF;
+}
+.back-white{
+  background-color: #FFFFFF;
+}
+.border-white{
+  border-width: 1px;
+  border-color: #FFFFFF;
+}
+
+.text-black{
+  color: #08090A;;
+}
+.back-black{
+  background-color: #08090A;;
+}
+.border-black{
+  border-width: 1px;
+  border-color: #08090A;;
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: #C2410C;

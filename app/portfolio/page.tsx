@@ -3,6 +3,7 @@
 import Image from "next/image";
 import SkillWordCloud from "../ui/SkillWordCloud";
 import TimeLine from "../ui/TimeLine";
+import Certificaations from "../ui/Certifications";
 
 export default function Page() {
   const data = [{
@@ -31,8 +32,9 @@ export default function Page() {
                   <div className="pb-10">
                     <TimeLine />
                   </div>
-                  <div className="">
+                  <div className="space-y-4">
                     <SkillWordCloud />
+                    <Certificaations />
                   </div>
                 </div>
             </div>

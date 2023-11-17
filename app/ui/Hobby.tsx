@@ -72,7 +72,7 @@ export default function Hobby(){
     return (
         <div className="p-1">
             <div className="text-center mb-2">Hobbies</div>
-            <div className="text-xs text-center pl-2 pr-2 lg:pl-8 lg:pr-8">In the tapestry of my life, free time is the canvas where I weave the threads of my diverse interests and hobbies. Here's a peek into the kaleidoscope of activities that occupy my moments of leisure.</div>
+            <div className="text-xs text-center pl-2 pr-2 lg:pl-8 lg:pr-8">In the tapestry of my life, free time is the canvas where I weave the threads of my diverse interests and hobbies. Here&apos;s a peek into the kaleidoscope of activities that occupy my moments of leisure.</div>
             <div className="pt-2 pb-2">
               {getAllHobby()}
             </div>

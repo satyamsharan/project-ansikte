@@ -190,7 +190,7 @@ export default function TimeLine(){
         data.map((node, index) => {
             result.push(
                 <div key ={index} className="ml-auto mb-5 mt-5">
-                    <div id={`timeline-node-${index}`} className={`cursor-pointer ${node.type=='block'?'mr-auto justify-center':''} flex ${node.alignLeft?'flex-row-reverse mr-auto':'felx-row ml-auto'} max-w-[280px] min-w-[200px] items-center rounded-xl text-bold`}>
+                    <div id={`timeline-node-${index}`} className={`cursor-pointer ${node.type=='block'?'mr-auto justify-center':''} flex ${node.alignLeft?'flex-row-reverse mr-auto':'felx-row ml-auto'} max-w-[280px] min-w-[200px] items-center rounded-xl border-a${node.color} text-bold`}>
                         {getIcon(node)}
                         {getText(node)}
                         {node.type=='block'?getIcon(node):''}

@@ -108,6 +108,7 @@ export default function SkillWordCloud(){
     const skillWordCloudOptions: Options = {
         chart: {
             backgroundColor:'none',
+            height:500,
             style:{
                 fontFamily: fontStyle.fontFamily
             }
@@ -150,7 +151,7 @@ export default function SkillWordCloud(){
 
 
     return(
-        <div className='min-h-[400px]'>
+        <div className='min-h-[500px]'>
             <HighchartsReact 
                 highcharts={Highcharts}
                 options={skillWordCloudOptions}

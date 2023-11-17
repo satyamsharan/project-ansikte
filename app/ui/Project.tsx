@@ -151,8 +151,8 @@ export default function Project(){
 
     function getProjectPanel(project: Project, i:number): React.ReactElement{
         const childrenElementList: React.ReactElement[] = [];
-        childrenElementList.push(<div className="text-xs mb-2">({project.duration})</div>);
-        childrenElementList.push(<div className="text-xs mb-2">{project.description}</div>);
+        childrenElementList.push(<div key={`pro-duration-${i}`} className="text-xs mb-2">{project.duration}</div>);
+        childrenElementList.push(<div key={`pro-description-${i}`} className="text-xs mb-2">{project.description}</div>);
         if(project.bullets){
             project.bullets.map((bullet, index) => {
                 let splicedText = bullet.split(':');

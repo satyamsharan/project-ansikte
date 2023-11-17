@@ -122,8 +122,8 @@ export default function Project(){
         },{
             name:'Flowity',
             duration:'Sep 2022 - Jan 2023',
-            description:'Flowity provides business intelligence value by unitizing the power of artificial intelligence. It uses a camera-based sensor and can provide metrics that could previously only be obtained in a non-automated fashion. I worked as a senior full-stack developer to incorporate key features.',
-            excerpt:'Flowity provides business intelligence value by unitizing the power of artificial intelligence and a camera-based sensor.',
+            description:'Flowity provides business intelligence by utilizing the power of artificial intelligence. It uses a camera-based sensor and can provide metrics that could previously only be obtained in a non-automated fashion. I worked as a senior full-stack developer to incorporate key features.',
+            excerpt:'Flowity provides business intelligence by utilizing the power of artificial intelligence and a camera-based sensor.',
             link:'https://www.flowity.com/',
             bullets:['Type:  Product Development', 'Technologies Used: Azure IoT hub, Mender, Terraform, Docker & Kubernetes, Nvidia Jetson, InfluxDB (time-series) Azure AD, Azure Communication Services, React, Spring Boot, Java (OpenJDK) and JavaScript.'],
             image:'11.jpg',
@@ -131,8 +131,8 @@ export default function Project(){
         },{
             name:'Data and Analytics - Exploration and Up-skilling',
             duration:'Jan 2023 - Apr 2023',
-            description:'The assignment was to explore various Data management and analytics tools. Worked with the following tools to create an electricity price forecaster. I explored and evaluated Snowflake with Snowpipe and Snowpark Java and Python API. Also created a proof of concepts utilizing Snowflake capabilities and publicly available energy data.',
-            excerpt:'Evaluated Snowflake with Snowpark Java API to create a proof of concepts utilizing Snowflake capabilities and publicly available energy data.',
+            description:'The assignment was to explore various data management and analytics tools. Worked with the following tools to create an electricity price forecaster. I explored and evaluated Snowflake with Snowpipe and Snowpark Java and Python API. Also created a proof of concept utilizing Snowflake capabilities and publicly available energy data.',
+            excerpt:'Evaluated Snowflake with Snowpark Java API to create a proof of concept utilizing Snowflake capabilities and publicly available energy data.',
             link:'https://www.snowflake.com/en/',
             bullets:['Type:  Exploration', 'Technologies Used: Snowflake, Terraform, Snowflake Java API, Snowflake Python API, SnowSQL, Azure Synapse Analytics.'],
             image:'12.jpg',

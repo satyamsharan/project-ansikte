@@ -26,7 +26,7 @@ export default function TimeChart(){
         name: 'Connecting with people',
         y: 10
     }, {
-        name: 'Hobby work',
+        name: 'Creative outlet',
         y: 7
     }, {
         name: 'Miscellaneous tasks',
@@ -90,7 +90,7 @@ export default function TimeChart(){
             }
         },
         subtitle:{
-            text:'Explore the dynamics of my daily professional routine and discover the diverse tasks that shape my workday.',
+            text:'Discover the diverse tasks that shape my workday.',
             align:'center',
             style:{
                 color:'#FFFFFF',

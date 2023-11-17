@@ -52,7 +52,7 @@ export default function TimeLine(){
         name: 'Accenture, Gurugram, India',
         label: 'Specialist (Team Lead)',
         duration: 'Dec 2016 - Mar 2018',
-        description: 'Soon after, I was entrusted with the responsibility of leading a compact yet highly skilled team comprising 5-8 experts. Guiding this team allowed me to cultivate collaborative problem-solving approaches, ensuring not only the swift resolution of issues but also fostering a cohesive and high-performing unit dedicated to delivering exceptional results.',
+        description: 'Soon after, I was entrusted with the responsibility of leading a compact yet highly skilled team comprising of 5-8 experts. Guiding this team allowed me to cultivate collaborative problem-solving approaches, ensuring swift resolution of issues and fostering a cohesive and high-performing unit dedicated to delivering exceptional results.',
         alignLeft: true,
         color:3,
         link:'https://www.accenture.com/au-en/case-studies/applied-intelligence/telstra',
@@ -62,7 +62,7 @@ export default function TimeLine(){
         name: 'Accenture, Bologna, Italy',
         label: 'Specialist (Team Lead)',
         duration: 'Apr 2018 - Nov 2019',
-        description: 'In 2018, my outstanding contributions to the field of data analytics opened doors to a remarkable opportunity — I joined a core product development team based in Bologna and Milan, Italy. Collaborating on the creation of a cutting-edge, cloud-enabled data analytics and machine learning platform, our efforts transcended geographical boundaries, impacting over 80 clients worldwide. This experience not only broadened my technical expertise but also allowed me to play a pivotal role in the global deployment of a transformative solution, further solidifying my commitment to innovative and impactful work.',
+        description: 'In 2018, my outstanding contributions to the field of data analytics opened doors to a remarkable opportunity — I joined a core product development team based in Bologna and Milan, Italy. Collaborating on the creation of a cutting-edge, cloud-enabled data analytics and machine learning platform, our efforts transcended geographical boundaries, impacting over 80 clients worldwide. This experience broadened my technical expertise and also allowed me to play a pivotal role in the global deployment of a transformative solution.',
         alignLeft: false,
         color:4,
         link:'https://www.accenture.com/us-en/services/applied-intelligence/aip-plus-index',
@@ -72,7 +72,7 @@ export default function TimeLine(){
         name: 'Accenture, Bologna, Italy',
         label: 'Associate Manager',
         duration: 'Dec 2019 - Mar 2020',
-        description: 'In a span of just 1.5 years since joining the product development team, I achieved a significant milestone — I was promoted to Associate Manager. In this elevated role, I assumed leadership of a dynamic team entrusted with the development of innovative functionalities for the platform. This opportunity not only underscored my rapid professional growth but also allowed me to steer and contribute to the evolution of the product, reinforcing my commitment to driving excellence and continuous improvement within the team and the platform.',
+        description: 'In a span of just 1.5 years since joining the product development team, I achieved a significant milestone — I was promoted to Associate Manager. In this elevated role, I assumed leadership of a dynamic team entrusted with the development of innovative functionalities for the platform. This opportunity not only underscored my rapid professional growth but also allowed me to steer and contribute to the evolution of the product.',
         alignLeft: true,
         color:4,
         link:'https://www.accenture.com/us-en/services/applied-intelligence/aip-plus-index',
@@ -102,7 +102,7 @@ export default function TimeLine(){
         name: 'Flowity, Stockholm, SE',
         label: 'Consultant',
         duration: 'Oct 2022 - Feb 2023',
-        description: 'While at AFRY, I actively participated in the in-house development of Flowity, an innovative AI tool harnessing computer vision to deliver crucial insights. Today, Flowity stands as a well-established player in the industry, successfully catering to a diverse clientele. Its evolution from inception to a trusted solution reflects our commitment to delivering innovative, AI-driven insights that have found resonance and value across multiple sectors.',
+        description: 'I actively participated in AFRY\'s in-house development of Flowity, an innovative AI application harnessing computer vision to deliver crucial insights. Today, Flowity stands as a well-established player in the industry, successfully catering to a diverse clientele. Its evolution from inception to a trusted solution reflects our commitment to delivering innovative, AI-driven insights that have found value across multiple sectors.',
         alignLeft: false,
         color:6,
         link:'https://www.flowity.com/',
@@ -112,7 +112,7 @@ export default function TimeLine(){
         name: 'Revvity, Stockholm, SE',
         label: 'Consultant',
         duration: 'May 2023 - Oct 2023',
-        description: 'As the Genomics business of PerkinElmer underwent a transformative transition to become the new entity, Revvity, I was entrusted once again as a senior consultant with a pivotal role. This time, my responsibilities extended to guiding Revvity through a comprehensive rebranding process for their multiple application stacks. In this capacity, I ensured a seamless and high-quality transition, contributing to the establishment of Revvity as a distinct and dynamic player in the industry, aligned with its renewed vision and identity.',
+        description: 'As the Genomics business of PerkinElmer underwent a transition to become the new entity, Revvity, I was entrusted once again as a senior consultant with a pivotal role. This time, my responsibilities extended to guiding Revvity through a comprehensive rebranding process for their multiple application stacks. In this capacity, I ensured a seamless and high-quality transition, contributing to the establishment of Revvity as a distinct and dynamic player in the industry, aligned with its renewed vision and identity.',
         alignLeft: true,
         color:6,
         link:'https://www.revvity.com/',
@@ -122,7 +122,7 @@ export default function TimeLine(){
         name: 'AFRY, Stockholm, Sweden',
         label: 'Senior Consultant',
         duration: 'Apr 2020 - Ongoing',
-        description: 'With an enriching tenure of over 5 years at Accenture, I embarked on a new chapter in my career by joining AFRY in Stockholm, Sweden. Renowned for its high ranking in the \'Great Place to Work\' index, AFRY boasts a robust foundation in engineering consulting spanning across diverse industries. As I approach my fourth year with AFRY, my commitment remains steadfast in assisting our valued customers. I am dedicated to delivering impactful solutions that empower them to not only achieve but also sustain operational excellence. This ongoing journey at AFRY has been instrumental in honing my skills and deepening my understanding of how strategic consulting can truly make a lasting difference for our clients.',
+        description: 'With an enriching tenure of over 5 years at Accenture, I embarked on a new chapter in my career by joining AFRY in Stockholm, Sweden. AFRY boasts a robust foundation in engineering consulting spanning across diverse industries and has consistently ranked high in the \'Great Place to Work\' index. As I approach my fourth year with AFRY, my commitment remains steadfast in assisting our valued customers. I am dedicated to delivering impactful solutions that empower them to not only achieve but also sustain operational excellence. This ongoing journey at AFRY has been instrumental in honing my skills and deepening my understanding of how strategic consulting can truly make a lasting difference for our clients.',
         alignLeft: false,
         type: 'block1',
         color:8,
@@ -209,7 +209,7 @@ export default function TimeLine(){
     return(
         <div>
             <div className="text-center mb-2">My Professional Timeline</div>
-            <div className="text-xs text-center pl-8 pr-8 pb-6">Explore a comprehensive account of my professional voyage, featuring diverse experiences garnered from various organizations intertwined with my educational pursuits.</div>
+            <div className="text-xs text-center pl-8 pr-8 pb-6">Explore a comprehensive account of my professional voyage, featuring diverse experiences garnered from various organizations that I have been a part of.</div>
             <div className="timeLine max-w-[490px] m-auto">
               {getDataNode()}
             </div>

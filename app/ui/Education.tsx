@@ -28,7 +28,7 @@ export default function Education(){
             location:'Agra, India & Remote',
             date:'2017-2021',
             link:'https://www.dei.ac.in/dei/engineering/',
-            description:'In 2017, I made the decision to pursue my master\'s degree, opting for a part-time approach to seamlessly integrate my academic pursuits with my professional responsibilities. Specializing in Engineering Systems, my coursework provided invaluable insights into adopting a systems approach for the creation and management of complex systems.',
+            description:'In 2017, I made the decision to pursue my master\'s degree, opting for a part-time program to seamlessly integrate my academic pursuits with my professional responsibilities. Specializing in Engineering Systems, my coursework provided invaluable insights into adopting a systems approach for the creation and management of complex systems.',
             color:'7',
             icon:'FaGraduationCap'
         },{
@@ -39,7 +39,7 @@ export default function Education(){
             location:'Agra, India',
             date:'2007-2012',
             link:'https://www.dei.ac.in/dei/engineering/',
-            description:'I completed my undergraduate studies in Electrical Engineering with Computer Science Specialization at Dayalbagh Educational Institute, Agra, India. Dayalbagh Educational Institute is one of the oldest university in India with a well-rounded curriculum of theoretical knowledge and hands-on project experiences.',
+            description:'I completed my undergraduate studies in Electrical Engineering with Computer Science Specialization at Dayalbagh Educational Institute, Agra, India. Dayalbagh Educational Institute is one of the oldest universities in India with a well-rounded curriculum of theoretical knowledge and hands-on project experiences.',
             color:'6',
             icon:'FaUserGraduate'
         }
@@ -127,7 +127,7 @@ export default function Education(){
     return (
         <div className="p-1">
             <div className="text-center mb-2">My Education & Certifications</div>
-            <div className="text-xs text-center pl-2 pr-2 lg:pl-8 lg:pr-8">Discover the depth of my academic journey by exploring a detailed overview of my educational qualifications and also check a compilation showcasing my professional certifications, providing a detailed overview of the diverse skills I have acquired throughout my career.</div>
+            <div className="text-xs text-center pl-2 pr-2 lg:pl-8 lg:pr-8">Here is a detailed overview of my educational qualifications along with a compilation showcasing my professional certification acquired so far in my career.</div>
             <div className="pt-2 pb-2">
               {getAllEducation()}
             </div>

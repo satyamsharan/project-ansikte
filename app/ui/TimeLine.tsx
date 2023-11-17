@@ -210,7 +210,7 @@ export default function TimeLine(){
     return(
         <div>
             <div className="text-center mb-2">My Professional Timeline</div>
-            <div className="text-xs text-center pl-8 pr-8">Explore a comprehensive account of my professional voyage, featuring diverse experiences garnered from various organizations intertwined with my educational pursuits.</div>
+            <div className="text-xs text-center pl-8 pr-8 pb-6">Explore a comprehensive account of my professional voyage, featuring diverse experiences garnered from various organizations intertwined with my educational pursuits.</div>
             <div className="timeLine max-w-[490px] m-auto">
               {getDataNode()}
             </div>

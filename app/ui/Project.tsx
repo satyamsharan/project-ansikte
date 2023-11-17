@@ -138,13 +138,22 @@ export default function Project(){
             image:'12.jpg',
             color:"6"
         },{
+            name:'Revvity Vanadis® NIPT System',
+            duration:'May 2023 - Oct 2023',
+            description:'As the Genomics business of PerkinElmer underwent a transition to become the new entity, Revvity, I was entrusted once again as a senior consultant with a pivotal role. This time, my responsibilities extended to guiding Revvity through a comprehensive rebranding process for their multiple application stacks. In this capacity, I ensured a seamless and high-quality transition, contributing to the establishment of Revvity as a distinct and dynamic player in the industry, aligned with its renewed vision and identity.',
+            excerpt:'I was entrusted once again as a senior consultant with a pivotal role. This time, my responsibilities was to guiding Revvity through a rebranding process.',
+            link:'https://www.revvity.com//',
+            bullets:['Type: Product Development', 'Technologies: Visual C++, Python, Java Enterprise, Spring Boot, Microservices, OpenAPI (Swagger), PostgreSQL, Maven, Git, IntelliJ, Jenkins, JSP, JavaScript, CSS, HTML', 'Cloud Stack: AWS EC2 (Virtual Servers)'],
+            image:'13.jpg',
+            color:"7"
+        },{
             name:'Air Quality Monitoring System',
             duration:'Oct 2023 - Present',
             description:'Trafikverket wants a simple, cost-effective solution to monitor real-time data that is being measured by multiple sensors across different locations. I joined the project in the early phase where a hardware proof of concept was ready. My responsibility was to make a scalable, low-cost & industry-grade application that could address operational challenges such as sensor communication failure due to power or network outages, among others.',
             excerpt:'Trafikverket wants a simple, cost-effective solution to monitor real-time data that is being measured by multiple sensors across different locations.',
             link:'',
             bullets:['Type: Project', 'Technologies: InfluxDB, React, Next.js, Node.js, Java Enterprise, Microservices, JavaScript, CSS, HTML', 'Cloud Stack: InfluxDB, Azure App Service'],
-            image:'13.jpg',
+            image:'14.jpg',
             color:"1"
         }
     ];

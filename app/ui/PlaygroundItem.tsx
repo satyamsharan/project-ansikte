@@ -139,7 +139,7 @@ export default function PlaygroundItem({
                 initial={false}
                 
             >
-                {showModal && <Modal handleClose={()=>setShowModel(false)}  title={title?title:''} link={link} linkTitle={linkTitle} children={text}/>}
+                {showModal && <Modal handleClose={()=>setShowModel(false)}  title={title?title:''} link={link} linkTitle={linkTitle}>{text}</Modal>}
             </AnimatePresence>
         </>
     );

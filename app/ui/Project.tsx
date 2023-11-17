@@ -220,7 +220,7 @@ export default function Project(){
             </div>
 
             <AnimatePresence initial={false}>
-                {showModal && <Modal handleClose={()=>setShowModel(false)}  title={modalTitle} link={modalLink} children={modalChildren}/>}
+                {showModal && <Modal handleClose={()=>setShowModel(false)}  title={modalTitle} link={modalLink}>{modalChildren}</Modal>}
             </AnimatePresence>  
         </div>
     );

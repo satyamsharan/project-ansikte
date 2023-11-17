@@ -1,4 +1,3 @@
-"use client"
 import { Tooltip } from "react-tooltip";
 import { FaQuestion, FaVial, FaCarSide, FaGreaterThan, FaTv, FaUserGraduate, FaMicrochip, FaFont } from "react-icons/fa";
 import Link from "next/link";

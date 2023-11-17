@@ -1,6 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
-import { Tooltip } from "react-tooltip";
+import {AnimatePresence} from "framer-motion"
+import Modal from "./Modal";
+import React, { useState } from "react";
 
 interface Project{
     name:string;
@@ -14,6 +15,19 @@ interface Project{
 }
 
 export default function Project(){
+
+    const [showModal, setShowModel] = useState(false);
+    const [modalTitle, setModelTitle] = useState('');
+    const [modalChildren, setModelChildren] = useState([<></>]);
+    const [modalLink, setModelLink] = useState<string>();
+
+    function modelOpen(projectName:string, children:React.ReactElement[], projectLink?:string){
+        setModelTitle(projectName);
+        setModelChildren(children);
+        setModelLink(projectLink)
+        setShowModel(true);
+    }
+
     const projectList:Project[] = [
         {
             name:'Vidyaprasar: The Learning Management System',
@@ -135,21 +149,10 @@ export default function Project(){
         }
     ];
 
-    function getLink(project: Project): React.ReactElement{
-        let linkElement = <></>;
-        if(project.link){
-            linkElement = (
-                <div className="text-right">
-                    <Link href={`${project.link}`} target="_blank" className="curson-pointer text-xs font-bold text-blue">Read more here ...</Link>
-                </div>
-            )
-        }
-        return linkElement;
-      }
-
     function getProjectPanel(project: Project, i:number): React.ReactElement{
-        const bulletElementList: React.ReactElement[] = [];
-        let bulletElement = <></>;
+        const childrenElementList: React.ReactElement[] = [];
+        childrenElementList.push(<div className="text-xs mb-2">({project.duration})</div>);
+        childrenElementList.push(<div className="text-xs mb-2">{project.description}</div>);
         if(project.bullets){
             project.bullets.map((bullet, index) => {
                 let splitedText = bullet.split(':');
@@ -159,23 +162,22 @@ export default function Project(){
                     title = splitedText[0]
                     text = splitedText[1]
                 }
-                bulletElementList.push(
+                childrenElementList.push(
                     <div key={`bullet-${i}-${index}`} >
-                        <span className={`text-a${project.color}`}>
+                        <div className={`text-a${project.color}`}>
                             {title?('■ '+title+': '):''}
-                        </span>
-                        <span>
+                        </div>
+                        <div className="text-left pb-2">
                             {text}
-                        </span>
+                        </div>
                     </div>
                 );
             });
         }
 
-
         return (
             <>
-                <div id={`project-node-${i}`} className={`cursor-pointer m-1 p-1 mb-4 border-bottom ${project.color}`}>
+                <div id={`project-node-${i}`} className={`cursor-pointer m-1 p-1 mb-10 border-bottom ${project.color}`} onClick={()=>modelOpen(project.name, childrenElementList, project.link)}>
                     <Image className="m-auto" src={`/project/${project.image?project.image:'no.jpg'}`} alt="" width={300} height={150}/>
                     <div className={`border-three border-t-none pl-2 pr-2 pt-1 pb-1 text-center  w-[300px]`}>
                         <div>
@@ -187,15 +189,6 @@ export default function Project(){
                         </div>
                     </div>
                 </div>
-                <Tooltip id={`project-tooltip-${i}`} className="project-tooltip max-w-[280px]" anchorSelect={`#project-node-${i}`} openOnClick={true} variant="light" place="bottom" clickable={true}>
-                    <div className={`font-bold text-center text-a${project.color}`}>{project.name}</div>
-                    <div className="text-xs text-center mb-2">({project.duration})</div>
-                    <div className="text-xs mb-2">{project.description}</div>
-                    <div className="mt-2 mb-2 ml-3 mr-3 text-xs text-left">
-                        {bulletElementList}
-                    </div>
-                    {getLink(project)}
-                </Tooltip>
             </>
         );
     }
@@ -225,6 +218,10 @@ export default function Project(){
             <div className="pt-2 pb-2">
               {getAllProjects()}
             </div>
+
+            <AnimatePresence initial={false}>
+                {showModal && <Modal handleClose={()=>setShowModel(false)}  title={modalTitle} link={modalLink} childrem={modalChildren}/>}
+            </AnimatePresence>  
         </div>
     );
 }

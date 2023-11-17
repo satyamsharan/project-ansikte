@@ -10,7 +10,7 @@ const redHatDisplay = Red_Hat_Display({
 
 export const metadata: Metadata = {
   title: 'Satyam Sharan',
-  description: 'Homepage for satyamsharan.com created under project Ansikte',
+  description: 'Hello, and thank you for stepping into my digital realm! Here, you\'ll find a curated space that reflects the diverse facets of my professional life, passions, and perspectives.',
 }
 
 export default function RootLayout({

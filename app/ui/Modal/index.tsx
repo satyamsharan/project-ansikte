@@ -6,11 +6,11 @@ import Link from "next/link";
 
 export default function Modal({
     title, 
-    text,
+    childrem,
     linkTitle = "Read more here ...",
-    opacity = .9,
+    opacity = .97,
     link,
-    handleClose}:{title:string, text:string, linkTitle?:string, link?:string, opacity?:number, handleClose:any}){
+    handleClose}:{title:string, childrem: React.ReactNode, linkTitle?:string, link?:string, opacity?:number, handleClose:any}){
 
     const dropIn ={
         hidden:{
@@ -46,7 +46,9 @@ export default function Modal({
                         <button onClick={handleClose}><FaXmark /></button>
                     </div>
                     
-                    <div className="text-xs mb-2 text-justify">{text}</div>
+                    <div className="text-xs mb-2 text-justify">
+                        {childrem}
+                    </div>
 
                     <div className="text-right">
                         {link && <Link className="text-xs " href={`${link}`} target="_blank">{linkTitle}</Link>} 

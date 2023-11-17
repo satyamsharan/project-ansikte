@@ -322,4 +322,8 @@ img {
   background-image: url('/arrow.png');
   background-repeat: repeat-y;
   background-position: top;
+  @media only screen and (max-width: 490px) {
+    background-image: url('/arrow-m.png');
+    background-position-y: 38px;
+  }
 }

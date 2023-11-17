@@ -56,7 +56,7 @@ export default function Hobby(){
 
     function getIcon(hobby: Hobby){
         return (
-            <div className={`back-a${hobby.color} text-black text-center centered rounded-full m-1 ml-auto mr-auto max-w-[${iconSize+iconPadding*2}px]`} style={{'padding':iconPadding}}>
+            <div className={`back-a${hobby.color} text-black text-center centered rounded-full m-1 ml-auto mr-auto max-w-[56px]`} style={{'padding':iconPadding}}>
                 {selectIcon(hobby.icon)}
             </div>
         );

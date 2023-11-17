@@ -85,7 +85,7 @@ export default function Certification(){
                 IconElement = FaQuestion
         }
         return (
-                <div className={`back-a${certificate.color} text-black text-center centered rounded-full m-auto max-w-[${2*iconPadding+iconSize}px]`} style={{'padding':iconPadding}}>
+                <div className={`back-a${certificate.color} text-black text-center centered rounded-full m-auto max-w-[56px]`} style={{'padding':iconPadding}}>
                     {<IconElement size={iconSize}/>}
                 </div>
         );

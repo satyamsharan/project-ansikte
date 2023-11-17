@@ -33,7 +33,7 @@ export default function Project(){
             name:'Vidyaprasar: The Learning Management System',
             duration:'May 2010 - Jun 2012',
             description:'Vidyaprasar is the learning management system used specifically for distance education. It has feature like video on demand, course notes, planner etc. The system is developed in-house and I worked on all phases of development from requirement analysis to deployment and support.',
-            excerpt:'Vidyaprasar was the first large project I picked. It was an inhouse learning management system used specifically for distance education.',
+            excerpt:'Vidyaprasar was the first large project I picked. It was an in-house learning management system used specifically for distance education.',
             link:'https://vidyaprasar.dei.ac.in/',
             bullets:['Type: Project', 'Client: Dayalbagh Educational Institute', 'Technologies: Java, Google Web Toolkit, MySQL, RHEL'],
             image:'1.jpg',
@@ -44,7 +44,7 @@ export default function Project(){
             description:'E Procurement System is a platform for online procurement of Materials and services. It contains modules like E-Tendering, Auction, Reverse Auction, Global Tenders, User Management etc. Salient security features deployed include PKCS, asymmetric and symmetric encryption, PKI ennoblement, digital signature, SSL etc. apart from other security features like user name, password, digital authentication, role-based action/access privileges, audit trail, time synchronization etc.',
             excerpt:'E Procurement System is for online procurement of Materials and services. It contains modules like E-Tendering, Auction, Reverse Auction.',
             link:'https://www.ecil.co.in/',
-            bullets:['Type: Project', 'Client: Electronics Corporation India Ltd', 'Technologies: Java, Struts, MySQL, Public Key Infrastructure (PKI) security, Smartcard Integration'],
+            bullets:['Type: Project', 'Client: Electronics Corporation India Ltd', 'Technologies: Java, Struts, MySQL, Public Key Infrastructure (PKI) security, Smart-Card Integration'],
             image:'2.jpg',
             color:"3"
         },{
@@ -60,7 +60,7 @@ export default function Project(){
             name:'AIP Design Studio',
             duration:'Jan 2015 - Jul 2016',
             description:'Accenture Insights Platform hosts an advanced analytics applications portfolio, an integrated design, build, run environment enabling the agile development of industry and function-specific analytics solutions. The applications are flexible, easily tailored and agile, providing organizations with immediate access to the tools needed to make data-driven decisions and solve complex business issues.',
-            excerpt:'AIP hosts an advanced analytics applications portfolio to manage the agile development and mangement of analytics solutions.',
+            excerpt:'AIP hosts an advanced analytics applications portfolio to manage the agile development and management of analytics solutions.',
             link:'https://www.accenture.com/us-en/services/applied-intelligence/aip-plus-index',
             bullets:['Type: Product Development', 'Client: Multiple clients all over the globe', 'Technologies: Java Enterprise, Builder Pattern, Clean Architecture, JUnit, Hibernate, BackboneJS, MongoDB, Azure, Azure SQL, Docker, Kubernetes', 'Cloud Stack: AWS EC2 (Virtual Servers), AWS RDS (Relational Database), AWS DynamoDB(NoSQL DB), AWS S3 (File Storage)'],
             image:'4.jpg',
@@ -69,7 +69,7 @@ export default function Project(){
             name:'Marketing Mix Modelling',
             duration:'Jul 2016 - Dec 2016',
             description:'Telstra, Australia\'s largest telecommunications company, has multiple campaigns in-market and across both traditional & digital media at any one time. To better understand its customers and maximize return on marketing investment, Telstra wanted to implement a data-driven approach to provide deeper insights, faster. We developed a Marketing Mix Modeler which Simulates the return on investment with marketing spend across various channels and campaigns. It also optimized the split of the budget for target-based or budget-based targets.',
-            excerpt:'Telstraa data-driven approach to provide deeper insights, faster. We developed a Marketing Mix Modeler.',
+            excerpt:'Telstra data-driven approach to provide deeper insights, faster. We developed a Marketing Mix Modeler.',
             link:'https://www.accenture.com/au-en/case-studies/applied-intelligence/telstra',
             bullets:['Type: Custom Analytics Application (Marketing Mix Modelling)', 'Client: Telstra, Melbourne, Australia', 'Technologies: Java Enterprise, Builder Pattern, REST, R, PostgreSQL, AIP-Design Studio Platform, Java, JUnit, HighCharts, D3, Backbone JS, Bootstrap. Maven, Git, IntelliJ', 'Cloud Stack: AWS EC2 (Virtual Servers), AWS RDS (Relational Database), AWS DynamoDB(NoSQL DB), AWS S3 (File Storage)'],
             image:'5.jpg',
@@ -113,7 +113,7 @@ export default function Project(){
         },{
             name:'Compliance Navigator',
             duration:'May 2022 - Oct 2022',
-            description:'Compliance navigator is a tool being developed by a leading automotive group in Sweden. It streamlines all compliance-related activities pertaining to various products across different geographies. I worked with the agency team from AFRY as a technical architect and development lead. Analysed the feasibility in tandem with existing systems. Worked on data availability and integration, rapid  prototyping.',
+            description:'Compliance navigator is a tool being developed by a leading automotive group in Sweden. It streamlines all compliance-related activities pertaining to various products across different geographies. I worked with the agency team from AFRY as a technical architect and development lead. Analyzed the feasibility in tandem with existing systems. Worked on data availability and integration, rapid  prototyping.',
             excerpt:'Compliance Navigator to streamlining all compliance-related activities pertaining to various products across different geographies.',
             link:'https://www.volvocars.com/se/',
             bullets:['Type:  Product Architecture & Design', 'Technologies Used: Figma, PrimeReact, React, Next.js, HTML, JavaScript, Vira (Volvo\'s Jira), CarWeaver'],
@@ -122,17 +122,17 @@ export default function Project(){
         },{
             name:'Flowity',
             duration:'Sep 2022 - Jan 2023',
-            description:'Flowity provides business intelligence value by utilising the power of artificial intelligence. It uses a camera-based sensor and can provide metrics that could previously only be obtained in a non-automated fashion. I worked as a senior full-stack developer to incorporate key features.',
-            excerpt:'Flowity provides business intelligence value by utilising the power of artificial intelligence and a camera-based sensor.',
+            description:'Flowity provides business intelligence value by unitizing the power of artificial intelligence. It uses a camera-based sensor and can provide metrics that could previously only be obtained in a non-automated fashion. I worked as a senior full-stack developer to incorporate key features.',
+            excerpt:'Flowity provides business intelligence value by unitizing the power of artificial intelligence and a camera-based sensor.',
             link:'https://www.flowity.com/',
             bullets:['Type:  Product Development', 'Technologies Used: Azure IoT hub, Mender, Terraform, Docker & Kubernetes, Nvidia Jetson, InfluxDB (time-series) Azure AD, Azure Communication Services, React, Spring Boot, Java (OpenJDK) and JavaScript.'],
             image:'11.jpg',
             color:"4"
         },{
-            name:'Data and Analytics - Exploration and Upskilling',
+            name:'Data and Analytics - Exploration and Up-skilling',
             duration:'Jan 2023 - Apr 2023',
-            description:'The assignment was to explore various Data management and analytics tools. Worked with the following tools to create an electricity price forecaster. I explored and evaluated Snowflake with Snowpipe and Snowpark Java and Python API. Also created a proof of concepts utilising Snowflake capabilities and publicly available energy data.',
-            excerpt:'Evaluated Snowflake with Snowpark Java API to create a proof of concepts utilising Snowflake capabilities and publicly available energy data.',
+            description:'The assignment was to explore various Data management and analytics tools. Worked with the following tools to create an electricity price forecaster. I explored and evaluated Snowflake with Snowpipe and Snowpark Java and Python API. Also created a proof of concepts utilizing Snowflake capabilities and publicly available energy data.',
+            excerpt:'Evaluated Snowflake with Snowpark Java API to create a proof of concepts utilizing Snowflake capabilities and publicly available energy data.',
             link:'https://www.snowflake.com/en/',
             bullets:['Type:  Exploration', 'Technologies Used: Snowflake, Terraform, Snowflake Java API, Snowflake Python API, SnowSQL, Azure Synapse Analytics.'],
             image:'12.jpg',
@@ -155,12 +155,12 @@ export default function Project(){
         childrenElementList.push(<div className="text-xs mb-2">{project.description}</div>);
         if(project.bullets){
             project.bullets.map((bullet, index) => {
-                let splitedText = bullet.split(':');
+                let splicedText = bullet.split(':');
                 let title=null;
                 let text=bullet;
-                if(splitedText.length==2){
-                    title = splitedText[0]
-                    text = splitedText[1]
+                if(splicedText.length==2){
+                    title = splicedText[0]
+                    text = splicedText[1]
                 }
                 childrenElementList.push(
                     <div key={`bullet-${i}-${index}`} >
@@ -220,7 +220,7 @@ export default function Project(){
             </div>
 
             <AnimatePresence initial={false}>
-                {showModal && <Modal handleClose={()=>setShowModel(false)}  title={modalTitle} link={modalLink} childrem={modalChildren}/>}
+                {showModal && <Modal handleClose={()=>setShowModel(false)}  title={modalTitle} link={modalLink} children={modalChildren}/>}
             </AnimatePresence>  
         </div>
     );

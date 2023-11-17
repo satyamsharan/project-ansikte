@@ -50,7 +50,7 @@ export default function ContactCard({
 
     function getText(){
         return (
-            <div className={`pannelText m-3 ml-4 mr-4 ${reversed?'text-right':'text-left'}`}>
+            <div className={`panelText m-3 ml-4 mr-4 ${reversed?'text-right':'text-left'}`}>
                 <div className={`text-a${accentColor}`}><Link href={`${link}`} target="_blank">{title}</Link></div>
                 <div className="text-xs">{text}</div>
             </div>

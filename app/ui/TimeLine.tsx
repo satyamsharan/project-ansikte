@@ -168,7 +168,7 @@ export default function TimeLine(){
 
       function getText(node: TimeLineProps): React.ReactElement{
         return (
-            <div className={`pannelText m-3 ${node.type=='block'?'text-center':''} ${node.alignLeft?'text-right':'text-left'}`}>
+            <div className={`panelText m-3 ${node.type=='block'?'text-center':''} ${node.alignLeft?'text-right':'text-left'}`}>
                 <div>
                     <div className={`text-sm text-a${node.color}`}>{node.name}</div>
                     <div className="text-xs text-white">{node.label}</div>
@@ -181,7 +181,7 @@ export default function TimeLine(){
       function getLink(node: TimeLineProps): React.ReactElement{
         return (
             <div className="text-right">
-                <Link href={`${node.link}`} target="_blank" className="curson-pointer text-xs font-bold text-blue">Read more here ...</Link>
+                <Link href={`${node.link}`} target="_blank" className="cursor-pointer text-xs font-bold text-blue">Read more here ...</Link>
             </div>
         );
       }
@@ -190,7 +190,7 @@ export default function TimeLine(){
         data.map((node, index) => {
             result.push(
                 <div key ={index} className="ml-auto mb-5 mt-5">
-                    <div id={`timeline-node-${index}`} className={`cursor-pointer ${node.type=='block'?'mr-auto justify-center':''} flex ${node.alignLeft?'flex-row-reverse mr-auto':'felx-row ml-auto'} max-w-[280px] min-w-[200px] items-center rounded-xl border-a${node.color} text-bold`}>
+                    <div id={`timeline-node-${index}`} className={`cursor-pointer ${node.type=='block'?'mr-auto justify-center':''} flex ${node.alignLeft?'flex-row-reverse mr-auto':'flex-row ml-auto'} max-w-[280px] min-w-[200px] items-center rounded-xl border-a${node.color} text-bold`}>
                         {getIcon(node)}
                         {getText(node)}
                         {node.type=='block'?getIcon(node):''}

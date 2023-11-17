@@ -5,7 +5,7 @@ import SkillWordCloud from "../ui/SkillWordCloud";
 import TimeLine from "../ui/TimeLine";
 import Certification from "../ui/Certification";
 import Education from "../ui/Education";
-import Language from "../ui/Lanuage";
+import Language from "../ui/Language";
 import TimeChart from "../ui/TimeChart";
 import Project from "../ui/Project";
 

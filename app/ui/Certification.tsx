@@ -15,7 +15,7 @@ interface Certificate{
 export default function Certification(){
     let iconPadding = 12;
     let iconSize = 32;
-    const certtificationList:Certificate[] = [
+    const certificationList:Certificate[] = [
         {
             name:'SnowPro Core',
             issuer:'Snowflake',
@@ -93,7 +93,7 @@ export default function Certification(){
 
     function getText(certificate: Certificate): React.ReactElement{
         return (
-            <div className={`pannelText mt-2 text-center`}>
+            <div className={`panelText mt-2 text-center`}>
                 <div>
                     <div className={`text-xs text-bold text-a${certificate.color}`}>{certificate.name}</div>
                     <div className="text-xs text-white">{certificate.issuer}</div>
@@ -118,7 +118,7 @@ export default function Certification(){
 
     function getAllCertificates(){
         const result: React.ReactElement[] = [];
-        certtificationList.map((certificate, index) => {
+        certificationList.map((certificate, index) => {
             result.push(
                 <div key={`certificate-${index}`}>
                     {getCertificatePanel(certificate, index)}

@@ -6,11 +6,11 @@ import Link from "next/link";
 
 export default function Modal({
     title, 
-    childrem,
+    children,
     linkTitle = "Read more here ...",
     opacity = .97,
     link,
-    handleClose}:{title:string, childrem: React.ReactNode, linkTitle?:string, link?:string, opacity?:number, handleClose:any}){
+    handleClose}:{title:string, children: React.ReactNode, linkTitle?:string, link?:string, opacity?:number, handleClose:any}){
 
     const dropIn ={
         hidden:{
@@ -21,7 +21,7 @@ export default function Modal({
             opacity:1,
             y:"0",
             transition:{
-                durationn:.1,
+                duration:.5,
                 type:"spring"
             }
         },
@@ -47,7 +47,7 @@ export default function Modal({
                     </div>
                     
                     <div className="text-xs mb-2 text-justify">
-                        {childrem}
+                        {children}
                     </div>
 
                     <div className="text-right">

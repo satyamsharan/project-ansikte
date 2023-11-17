@@ -66,7 +66,7 @@ export default function Education(){
 
     function getText(edu: Education): React.ReactElement{
         return (
-            <div className={`pannelText mt-2 text-center`}>
+            <div className={`panelText mt-2 text-center`}>
                 <div>
                     <div className={`text-xs text-bold text-a${edu.color}`}>{edu.name}</div>
                     <div className="text-xs text-white">{edu.field}</div>
@@ -84,7 +84,7 @@ export default function Education(){
         if(edu.link){
             linkElement = (
                 <div className="text-right">
-                    <Link href={`${edu.link}`} target="_blank" className="curson-pointer text-xs font-bold text-blue">Read more here ...</Link>
+                    <Link href={`${edu.link}`} target="_blank" className="cursor-pointer text-xs font-bold text-blue">Read more here ...</Link>
                 </div>
             )
         }

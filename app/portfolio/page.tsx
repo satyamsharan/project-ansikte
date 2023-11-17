@@ -8,6 +8,7 @@ import Education from "../ui/Education";
 import Language from "../ui/Language";
 import TimeChart from "../ui/TimeChart";
 import Project from "../ui/Project";
+import Hobby from "../ui/Hobby";
 
 export default function Page() {
   const data = [{
@@ -42,6 +43,7 @@ export default function Page() {
                     </div>
                     <TimeChart />
                     <Project />
+                    <Hobby />
                     <Language />
                   </div>
 

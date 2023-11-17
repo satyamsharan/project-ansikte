@@ -32,8 +32,8 @@ export default function Project(){
         {
             name:'Vidyaprasar: The Learning Management System',
             duration:'May 2010 - Jun 2012',
-            description:'Vidyaprasar is the learning management system used specifically for distance education. It has feature like video on demand, course notes, planner etc. The system is developed in-house and I worked on all phases of development from requirement analysis to deployment and support.',
-            excerpt:'Vidyaprasar was the first large project I picked. It was an in-house learning management system used specifically for distance education.',
+            description:'Vidyaprasar is the learning management system used specifically for distance education. It has features like video on demand, course notes, planner etc. The system is developed in-house and I worked on all phases of development from requirement analysis to deployment and support.',
+            excerpt:'Vidyaprasar was the first large scale project I worked on. It was an in-house learning management system used specifically for distance education.',
             link:'https://vidyaprasar.dei.ac.in/',
             bullets:['Type: Project', 'Client: Dayalbagh Educational Institute', 'Technologies: Java, Google Web Toolkit, MySQL, RHEL'],
             image:'1.jpg',
@@ -41,7 +41,7 @@ export default function Project(){
         },{
             name:'E Procurement System',
             duration:'Jul 2012 - May 2014',
-            description:'E Procurement System is a platform for online procurement of Materials and services. It contains modules like E-Tendering, Auction, Reverse Auction, Global Tenders, User Management etc. Salient security features deployed include PKCS, asymmetric and symmetric encryption, PKI ennoblement, digital signature, SSL etc. apart from other security features like user name, password, digital authentication, role-based action/access privileges, audit trail, time synchronization etc.',
+            description:'E Procurement System is a platform for online procurement of materials and services. It contains modules like E-Tendering, Auction, Reverse Auction, Global Tenders, User Management etc. Salient security features deployed include PKCS, asymmetric and symmetric encryption, PKI enablement, digital signature, SSL etc. apart from other security features like user name, password, digital authentication, role-based action/access privileges, audit trail, time synchronization etc.',
             excerpt:'E Procurement System is for online procurement of Materials and services. It contains modules like E-Tendering, Auction, Reverse Auction.',
             link:'https://www.ecil.co.in/',
             bullets:['Type: Project', 'Client: Electronics Corporation India Ltd', 'Technologies: Java, Struts, MySQL, Public Key Infrastructure (PKI) security, Smart-Card Integration'],
@@ -51,7 +51,7 @@ export default function Project(){
             name:'Supplier Relationship Management System (SRMS)',
             duration:'May 2014 - Dec 2014',
             description:'Supplier Relationship Management System (SRMS) is the system for strategically planning and managing, all interactions with third-party organizations that supply goods and/or services to an organization in order to maximize the value of those interactions. Project scope is the custom development of J2EE based SRMS for the client DP World, Dubai which operates more than 65 marine terminals across six continents. The Project requires integration with its existing Finance System (Oracle Financial Suite), Procurement & Material Management systems (Maximo & Buy World), and other internal systems.',
-            excerpt:'Supplier Relationship Management System (SRMS) is the system for strategically managing, all interactions with third-party organizations.',
+            excerpt:'Supplier Relationship Management System (SRMS) is the system for strategically managing all interactions with third-party organizations.',
             link:'https://www.dpworld.com/',
             bullets:['Type: Custom Project - Web Application','Client: Dubai Port World, Dubai', 'Technologies: Java Enterprise, Spring, Hibernate, JQuery UI, MySQL, REST Services'],
             image:'3.jpg',

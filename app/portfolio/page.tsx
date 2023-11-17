@@ -7,7 +7,6 @@ import Certification from "../ui/Certification";
 import Education from "../ui/Education";
 import Language from "../ui/Lanuage";
 import TimeChart from "../ui/TimeChart";
-import Achievement from "../ui/Achievement";
 import Project from "../ui/Project";
 
 export default function Page() {
@@ -42,7 +41,6 @@ export default function Page() {
                       <Certification />
                     </div>
                     <TimeChart />
-                    {/* <Achievement /> */}
                     <Project />
                     <Language />
                   </div>

@@ -119,11 +119,21 @@ export default function TimeLine(){
         icon:'FaVial'
         
       },{
+        name: 'Olink, Uppsala, SE',
+        label: 'Data Architect',
+        duration: 'Jan 2024 - Ongoing',
+        description: 'As the Genomics business of PerkinElmer underwent a transition to become the new entity, Revvity, I was entrusted once again as a senior consultant with a pivotal role. This time, my responsibilities extended to guiding Revvity through a comprehensive rebranding process for their multiple application stacks. In this capacity, I ensured a seamless and high-quality transition, contributing to the establishment of Revvity as a distinct and dynamic player in the industry, aligned with its renewed vision and identity.',
+        alignLeft: false,
+        color:6,
+        link:'https://olink.com/',
+        icon:'FaVial'
+        
+      },{
         name: 'AFRY, Stockholm, Sweden',
         label: 'Senior Consultant',
         duration: 'Apr 2020 - Ongoing',
         description: 'With an enriching tenure of over 5 years at Accenture, I embarked on a new chapter in my career by joining AFRY in Stockholm, Sweden. AFRY boasts a robust foundation in engineering consulting spanning across diverse industries and has consistently ranked high in the \'Great Place to Work\' index. As I approach my fourth year with AFRY, my commitment remains steadfast in assisting our valued customers. I am dedicated to delivering impactful solutions that empower them to not only achieve but also sustain operational excellence. This ongoing journey at AFRY has been instrumental in honing my skills and deepening my understanding of how strategic consulting can truly make a lasting difference for our clients.',
-        alignLeft: false,
+        alignLeft: true,
         type: 'block1',
         color:8,
         link:'https://afry.com/en',

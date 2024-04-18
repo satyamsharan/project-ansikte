@@ -122,7 +122,7 @@ export default function TimeLine(){
         name: 'Olink, Uppsala, SE',
         label: 'Data Architect',
         duration: 'Jan 2024 - Ongoing',
-        description: 'As the Genomics business of PerkinElmer underwent a transition to become the new entity, Revvity, I was entrusted once again as a senior consultant with a pivotal role. This time, my responsibilities extended to guiding Revvity through a comprehensive rebranding process for their multiple application stacks. In this capacity, I ensured a seamless and high-quality transition, contributing to the establishment of Revvity as a distinct and dynamic player in the industry, aligned with its renewed vision and identity.',
+        description: '',
         alignLeft: false,
         color:6,
         link:'https://olink.com/',

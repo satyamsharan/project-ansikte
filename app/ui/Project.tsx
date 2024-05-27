@@ -159,7 +159,7 @@ export default function Project(){
             name:'Global Assay View 360',
             duration:'Jan 2024 - Present',
             description:'To accelerate innovation in product development and increase operational excellence, Olink is establishing a modern data analytics environment that strengthens central data governance policies and provides access to novel technologies. I joined the project from the start, worked on identifying the best cloud provider for Olink, and created a cloud architecture for the data platform. I also worked on the development and customization of the platform with inputs from the end user.',
-            excerpt:'To accelerate innovation in product development and increase operational excellence, Olink is establishing a modern data analytics environment that strengthens central data governance.',
+            excerpt:'To accelerate innovation in product development Olink is establishing a modern data analytics environment that strengthens central data governance.',
             link:'',
             bullets:['Type: Project', 'Technologies: AWS CDK, AWS Sagemaker, Amazon Quicksight, AWS Glue, Athena, Redshift, S3', 'Cloud Stack: Amazon Web Services'],
             image:'15.jpg',

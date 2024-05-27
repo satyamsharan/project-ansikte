@@ -148,13 +148,22 @@ export default function Project(){
             color:"7"
         },{
             name:'Air Quality Monitoring System',
-            duration:'Oct 2023 - Present',
+            duration:'Oct 2023 - Dec -2023',
             description:'Trafikverket wants a simple, cost-effective solution to monitor real-time data that is being measured by multiple sensors across different locations. I joined the project in the early phase where a hardware proof of concept was ready. My responsibility was to make a scalable, low-cost & industry-grade application that could address operational challenges such as sensor communication failure due to power or network outages, among others.',
             excerpt:'Trafikverket wants a simple, cost-effective solution to monitor real-time data that is being measured by multiple sensors across different locations.',
             link:'',
             bullets:['Type: Project', 'Technologies: InfluxDB, React, Next.js, Node.js, Java Enterprise, Microservices, JavaScript, CSS, HTML', 'Cloud Stack: InfluxDB, Azure App Service'],
             image:'14.jpg',
             color:"1"
+        },{
+            name:'Global Assay View 360',
+            duration:'Jan 2024 - Present',
+            description:'To accelerate innovation in product development and increase operational excellence, Olink is establishing a modern data analytics environment that strengthens central data governance policies and provides access to novel technologies. I joined the project from the start, worked on identifying the best cloud provider for Olink, and created a cloud architecture for the data platform. I also worked on the development and customization of the platform with inputs from the end user.',
+            excerpt:'To accelerate innovation in product development and increase operational excellence, Olink is establishing a modern data analytics environment that strengthens central data governance.',
+            link:'',
+            bullets:['Type: Project', 'Technologies: AWS CDK, AWS Sagemaker, Amazon Quicksight, AWS Glue, Athena, Redshift, S3', 'Cloud Stack: Amazon Web Services'],
+            image:'15.jpg',
+            color:"4"
         }
     ];
 

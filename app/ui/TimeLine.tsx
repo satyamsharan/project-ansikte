@@ -122,7 +122,7 @@ export default function TimeLine(){
         name: 'Olink, Uppsala, SE',
         label: 'Data Architect',
         duration: 'Jan 2024 - Ongoing',
-        description: 'Olink’s product life cycle management includes extensive data management and analysis of large datasets to drive innovation, product development, and support of products in the market. To accelerate innovation & product development and increase operational excellence, Olink is establishing a modern data analytics environment that strengthens central data governance policies and provides access to novel technologies.',
+        description: 'Olink’s product life cycle management includes extensive data management and analysis of large datasets. To accelerate innovation in product development and increase operational excellence, Olink is establishing a modern data analytics environment that strengthens central data governance policies and provides access to novel technologies.',
         alignLeft: false,
         color:6,
         link:'https://olink.com/',
